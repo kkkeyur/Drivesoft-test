@@ -1,0 +1,27 @@
+-- drivesoftdb.`user` definition
+
+CREATE TABLE `user` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `password` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- drivesoftdb.vehicles definition
+
+CREATE TABLE `vehicles` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `acct_id` bigint DEFAULT NULL,
+  `acct_type` varchar(10) DEFAULT NULL,
+  `borrower1_first_name` varchar(50) DEFAULT NULL,
+  `borrower1_last_name` varchar(50) DEFAULT NULL,
+  `collateral_make` varchar(20) DEFAULT NULL,
+  `collateral_model` varchar(20) DEFAULT NULL,
+  `collateral_stock_number` varchar(255) DEFAULT NULL,
+  `collateral_year_model` varchar(4) DEFAULT NULL,
+  `contract_date` varchar(255) DEFAULT NULL,
+  `contract_sales_price` varchar(255) DEFAULT NULL,
+  `sales_group_person1_id` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
